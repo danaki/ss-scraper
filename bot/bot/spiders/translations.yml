@@ -1,0 +1,206 @@
+Izlaiduma gads: Production year
+Motors: Engine
+Ātr.kārba: Gearbox
+Nobraukums, km: Mileage
+Krāsa: Color
+Virsbūves tips: Body type
+Tehniskā apskate: Inspection date
+VIN kods: VIN
+
+Vieta: Location
+
+Aprīkojums:
+  Stūres hidropastiprinātājs: Interior/Hydraulic power steering
+  Elektr. stūres pastiprinātājs: Interior/Electric power steering
+  Kondicionieris: Climate/Air conditioning
+  Klimata kontrole: Climate/Climate control
+  Autonomais sildītājs: Climate/Autonomous heater
+  Salona gaisa filtrs: Climate/Cabin air filter
+  Borta dators: Electronics/On-board computer
+  Riepu spiediena kontrole: Electronics/Tyre pressure monitoring
+  Parkošanās sens. aizmugurē: Electronics/Rear parking sensor
+  Parkošanās sens. priekšā: Electronics/Front parking sensor
+  Atpakaļskata kamera: Electronics/Rear view camera
+  Nakts redzamības kamera: Electronics/Night vision camera
+  Panorāmas redzam. kameras: Safety/360° degree camera
+  Distances kontrole: Electronics/Distance sensors
+  Lietus sensors: Electronics/Rainfall sensor
+  Kruīza kontrole: Electronics/Cruise control
+  Adaptīvā kruīzkontrole: Electronics/Adaptive cruise control
+  Gājēju detektors: Electronics/Pedestrian detection
+  Automātiska parkošana: Electronics/Self parking
+  Ceļa zīmju atpazīš. sistēma: Electronics/Traffic sign recognition
+  Klusuma zonu asistents: Electronics/Blind spot assist
+  Palīgsistēma braukš. joslās: Electronics/Lane assist
+  Avārijas bremzēšanas sist.: Electronics/Brake assist
+  Keyless Go: Electronics/Keyless Go
+  Sistēma Starts-Stop: Electronics/Start-stop system
+  El. bagāžnieka aizvēršana: Electronics/Electric trunk release
+  El. aizmugures saulessargs: Electronics/Rear electric sunshade
+  El. durvju aizvēršana: Electronics/Electric door opener
+  Jumta reliņi: Exterior/Roof rack
+  Sakabes āķis: Exterior/Tow hook
+  Lūka: Interior/Sunroof
+  Panorāmas lūka: Interior/Panoramic roof
+  Pilnpiedziņa 4x4: Driven wheels/All wheel 4х4
+  Pneimopiekare: Tuning/Air suspension
+  Spoileris: Tuning/Spoiler
+  Sliekšņi: Exterior/Footboards
+  Sporta pakete: Tuning/Sports package
+  Servisa grāmatiņa: Other/Service book
+  Vieglmetāla diski: Exterior/Light alloy rims
+
+Salons:
+  Ādas apdare: Interior/Leather seats
+  Roku balsti: Interior/Armrests
+  Tonēti aizmugurējie logi: Interior/Tinted windows
+  Saulessargi logiem: Interior/Window shutters
+  Isofix stiprinājumi: Interior/Isofix guides
+  Ledusskapis: Interior/Fridge
+
+Stūre:
+  Regulējama: Interior/Adjustable steering wheel
+  El. regulējama: Electronics/Electrically adjustable steering wheel
+  Daudzfunkcionāla: Interior/Multifunctional steering wheel
+  Sporta: Interior/Sport steering wheel
+  Apsildāma: Electronics/Heated steering wheel
+  Ar atmiņu: Interior/Steering wheel with memory
+
+Sēdekļi:
+  El. regulējami: Interior/Electric seats
+  Apsildāmi: Interior/Heated seats
+  Sporta: Interior/Sport seats
+  Recaro: Interior/Recaro seats
+  Ventilējami: Interior/Ventilated front seats
+  Masāžas: Interior/Massage seats
+  Ar atmiņu: Interior/Electric seats with memory
+
+Gaismas:
+  Xenona: Exterior/Xenon lights
+  Bi xenona: Exterior/Bi xenon lights
+  LED: Exterior/LED daytime running lights
+  LED bremžugunis: Exterior/LED brake lights
+  Papild. bremžu signāls: Exterior/Additional brake lights
+  Miglas lukturi: Exterior/Fog lights
+  Lampu mazgātāji: Exterior/Headlights washers
+  Automāt. tuvās gaismas: Exterior/Automatic daytime running lights
+  Automāt. tālās gaismas: Exterior/Automatic high beams
+  Adaptīvās tālās gaismas: Exterior/Adaptive high beam assist
+
+Spoguļi:
+  El. regulējami: Electronics/Electric mirrors
+  Apsildāmi: Electronics/Heated mirrors
+  Aptumšojošie: Electronics/Autodimming mirrors
+  Sporta: Electronics/Sport mirrors
+  El. nolokāmi: Electronics/Retractable mirrors
+  Ar atmiņu: Electronics/Electric mirrors with memory
+
+Drošība:
+  ABS: Safety/ABS
+  Centrālā atslēga: Security/Central locking
+  Signalizācija: Security/Alarm
+  Imobilaizers: Security/Immobilizer
+  Air-bag: Safety/Airbags
+  ESP: Safety/ESP
+  ASR: Safety/Traction control system
+  Marķējums: Security/Marking
+
+Hi-Fi:
+  FM/AM: Audio & video/FM-AM
+  CD: Audio & video/CD player
+  CD mainītājs: Audio & video/CD changer
+  DVD: Audio & video/DVD player
+  DVD mainītājs: Audio & video/DVD changer
+  MP3: Audio & video/MP3 player
+  USB: Audio & video/USB input
+  SDcard: Audio & video/SDcard
+  HDD: Audio & video/HDD
+  TV: Audio & video/TV
+  LCD: Audio & video/LCD monitor
+  Navigācija: Audio & video/Navigation-GPS
+  Tel./mob.: Electronics/In-car mobile phone
+  Bluetooth: Audio & video/Bluetooth
+  Hands-free: Audio & video/Handsfree kit
+  Subwoofer: Audio & video/Subwoofer
+
+Pilsēta, rajons: City and district
+Pilsēta: City
+Pilsēta/pagasts: City or district
+Rajons: District
+Ciems: Village
+Iela: Street
+Istabas: Rooms
+Platība: Area
+Stāvs: Floor
+Sērija: Project
+Mājas tips: Building type
+Ērtības: Conveniences
+
+ACTIONS:
+  Pārdod: Sell
+  Izīrē: Hand over
+
+CONVENIENCES:
+  Visas ērtības: All
+  Daļējas ērtības: Partial
+  Bez ērtībām: 'No'
+
+BUILDING_TYPES:
+  Paneļu - ķieģeļu: Panel-brick
+  Paneļu: Panel
+  Ķieģeļu: Brick
+  Koka: Wood
+  Mūra: Stone
+
+MONTHS:
+  janvaris: january
+  februaris: february
+  marts: march
+  aprilis: april
+  maijs: may
+  junijs: june
+  julijs: july
+  augusts: august
+  septembris: september
+  oktobris: october
+  novembris: november
+  decembris: december
+
+PRICE_PERIODS:
+  mēn.: Month
+  dienā: Day
+  ned.: Week
+
+BODY_TYPES:
+  Apvidus: Off-road
+  Hečbeks: Hatchback
+  Kabriolets: Cabriolet
+  Kupeja: Coupe
+  Minivens: Minivan
+  Sedans: Sedan
+  Universāls: Universal
+
+FUEL_TYPES:
+  benzīns/gāze: Petrol-gas
+  benzīns: Petrol
+  dīzelis: Diesel
+  hybrid: Hybrid
+
+GEARBOXES:
+  Manuāla: Manual
+  Automāts: Automatic
+
+COLORS:
+  Balta: White
+  Brūna: Brown
+  Dzeltena: Yellow
+  Gaiši zila: Light blue
+  Melna: Black
+  Oranža: Orange
+  Pelēka: Gray
+  Sarkana: Red
+  Sudraba: Silver
+  Tumši sarkana: Crimson
+  Violeta: Purple
+  Zaļa: Green
+  Zila: Blue

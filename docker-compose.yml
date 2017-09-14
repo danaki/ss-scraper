@@ -1,0 +1,11 @@
+web:
+  build: .
+  command: ./run.sh
+#  command: conda info --envs
+#  command: python run.py
+  volumes:
+    - .:/code
+  ports:
+    - "8000:8000"
+    - "27017:27017"
+

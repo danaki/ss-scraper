@@ -1,0 +1,17 @@
+name: ssguru
+dependencies:
+  - bokeh
+  - numpy
+  - pandas
+  - blaze
+  - flask
+  - scrapy
+  - unidecode
+  - pip:
+    - mongoengine
+    - dictdiffer
+    - flask_nav
+    - flask_bootstrap
+    - flask_wtf
+    - flask_appconfig
+    - flask_cache

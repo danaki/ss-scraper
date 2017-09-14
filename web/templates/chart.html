@@ -1,0 +1,53 @@
+{%- extends "base.html" %}
+
+{% import "bootstrap/utils.html" as utils %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block head %}
+  {{super()}}
+  {{ js_resources|safe }}
+  {{ css_resources|safe }}
+  {{ plot_script|safe }}
+  <style>
+    .bk-canvas {
+      position: relative !important;
+    }
+
+    .form-group .select2-container {
+      position: relative;
+      z-index: 2;
+      float: left;
+      width: 100%;
+      margin-bottom: 0;
+      display: table;
+      table-layout: fixed;
+    }
+  </style>
+{%- endblock %}
+
+{% block scripts -%}
+    {{super()}}
+    <script>
+      $(document).ready(function() { $("select").select2(); });
+    </script>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        {% if form %}
+          <div >
+            <div class="col-lg-4">
+              {{ wtf.quick_form(form, form_type='horizontal', method='GET', extra_classes='select2-bootstrap-append') }}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="col-lg-12">
+        {{ plot_div|safe }}
+      </div>
+    </div>
+  </div>
+{%- endblock %}
