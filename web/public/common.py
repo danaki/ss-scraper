@@ -33,7 +33,7 @@ def set_numerical_axis(p):
     yaxis.formatter = NumeralTickFormatter()
 
 def scatter_any(df, x, y, xlabel=None, ylabel=None, color_field=None, xformatter=NumeralTickFormatter(), yformatter=NumeralTickFormatter(), **kwargs):
-    f = figure(tools="wheel_zoom,pan,tap", webgl=True, width=defaults.plot_width, height=defaults.plot_height, **kwargs)
+    f = figure(tools="wheel_zoom,pan,tap,save", webgl=True, width=defaults.plot_width, height=defaults.plot_height, **kwargs)
 
     f.xaxis[0].formatter = xformatter
     f.yaxis[0].formatter = yformatter

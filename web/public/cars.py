@@ -60,7 +60,6 @@ def scatter_price_vs_mileage():
         xlabel="Mileage, km",
         ylabel="Price, EUR"))
 
-
 @cars.route("/scatter-mileage-vs-year")
 def scatter_mileage_vs_year():
     df = odo(g.ds, pd.DataFrame)
@@ -109,10 +108,10 @@ def bar_color_by_year():
         values=field,
         label='production_year',
         stack='color',
-        legend='top_right',
+        legend=False, #'top_right',
         title='Colors by Year of production',
         xlabel="Year",
-        ylabel="Count"
+        ylabel="Count",
         )
 
     p.background_fill_color = "beige"
@@ -128,7 +127,7 @@ def _bar_any_by_year(func, **kwargs):
 
     df = _order_years(grouping)
 
-    p = Bar(df, 'production_year', values='val', **kwargs)
+    p = Bar(df, 'production_year', values='val', legend=False, **kwargs)
     set_numerical_axis(p)
 
     return p
@@ -150,11 +149,6 @@ def _order_years(grouping):
     df[k] = df[k].astype('int64')
 
     return df
-
-# def jitter(values, limit=1):
-#     half = limit / 2
-#     return [random.uniform(-half, half) + x for x in values]
-
 
 def _any_vs_year(values, **kwargs):
     brands = sorted(list(g.ds.brand.distinct()))
@@ -180,6 +174,7 @@ def _any_vs_year(values, **kwargs):
             label='production_year',
             whisker_color='goldenrod',
             xlabel="Year of production",
+            legend=False,
             outliers=bool(request.args.get('outliers', '')),
             **kwargs)
 

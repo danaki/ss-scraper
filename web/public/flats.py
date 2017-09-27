@@ -141,7 +141,8 @@ def box_riga_price_mean_by_district():
         title="Price by m2 vs District (ordered by mean price of m2)",
         xlabel="District",
         ylabel="m2 price (EUR)",
-        outliers=outliers
+        outliers=outliers,
+        legend=False
         )
 
     return render(p, dict(form=form))
@@ -165,6 +166,7 @@ def _render_bar_riga_any_by_district(key, **kwargs):
         values=key,
         label=cat(columns=['district'], sort=False),
         xlabel="District",
+        legend=False,
         **kwargs)
 
     set_numerical_axis(p)
