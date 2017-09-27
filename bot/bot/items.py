@@ -10,10 +10,7 @@ from mongoengine_item import MongoengineItem
 class BaseDocument(Document):
     meta = {
         'abstract': True,
-        'indexes': [
-            {
-                'fields': ['open', 'price_period']
-            }
+        'indexes': [ { 'fields': ['open', 'price_period'] }]
     }
     _changes = ListField(DictField())
 
@@ -157,14 +154,6 @@ class Car(BaseDocument):
 
 
 class Flat(BaseDocument):
-    meta = {
-        'indexes': [
-            {
-                'fields': ['open', 'production_year', 'mileage']
-            }
-        ]
-    }
-
     city = StringField()
     district = StringField()
     village = StringField()

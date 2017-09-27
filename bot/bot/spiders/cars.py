@@ -13,7 +13,7 @@ from .base import ItemListSpider
 class CarsSpider(ItemListSpider):
     name = "cars"
     start_urls = (
-        'https://www.ss.lv/lv/transport/cars/',
+        'https://www.ss.com/lv/transport/cars/',
     )
 
     def parse(self, response):

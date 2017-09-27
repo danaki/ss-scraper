@@ -17,7 +17,7 @@ from bot.items import *
 
 
 class ItemSpider(Spider):
-    allowed_domains = ["ss.lv"]
+    allowed_domains = ["ss.com"]
 
     def __init__(self, *args, **kwargs):
         super(ItemSpider, self).__init__(*args, **kwargs)
@@ -34,14 +34,14 @@ class ItemSpider(Spider):
         if not action in ['sell', 'hand_over']:
             return None
 
-        if re.search(r'ss\.lv/msg/lv/transport/cars/', response.url):
+        if re.search(r'ss\.com/msg/lv/transport/cars/', response.url):
             extra = self._tokv_boolean(response.xpath('//td[@class="auto_c_column"]'))
 
             (kind, brand, model) = title.xpath('a/text()').extract()
 
             kv = self._flatten(properties, contacts, extra)
 
-            mileage = self._toint(kv.pop('mileage'))
+            mileage = self._toint(kv.pop('mileage')) if 'mileage' in kv else None
 
             production_year = kv.pop('production_year')
             production_month = None
@@ -74,7 +74,7 @@ class ItemSpider(Spider):
                 body_type=self._trabbr('BODY_TYPES', body_type),
                 **kv
             )
-        elif re.search(r'ss\.lv/msg/lv/real-estate/flats/', response.url):
+        elif re.search(r'ss\.com/msg/lv/real-estate/flats/', response.url):
             (_, city) = properties.popitem(False)
             (_, district) = properties.popitem(False)
 
@@ -252,9 +252,9 @@ class ItemListSpider(ItemSpider):
 
     def parse_list(self, response):
         model = None
-        if re.search(r'ss\.lv/lv/transport/cars/', response.url):
+        if re.search(r'ss\.com/lv/transport/cars/', response.url):
             model = Car
-        elif re.search(r'ss\.lv/lv/real-estate/flats/', response.url):
+        elif re.search(r'ss\.com/lv/real-estate/flats/', response.url):
             model = Flat
 
         if model:

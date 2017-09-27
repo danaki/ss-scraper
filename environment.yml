@@ -1,5 +1,10 @@
-name: ssguru
+name: ss-craper
+
+channels:
+  - conda-forge
+
 dependencies:
+  - python=2.7
   - bokeh
   - numpy
   - pandas

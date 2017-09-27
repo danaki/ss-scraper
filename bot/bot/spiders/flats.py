@@ -11,7 +11,7 @@ from .base import ItemListSpider
 class FlatsSpider(ItemListSpider):
     name = "flats"
     start_urls = (
-        'https://www.ss.lv/lv/real-estate/flats/',
+        'https://www.ss.com/lv/real-estate/flats/',
     )
 
     def parse(self, response):

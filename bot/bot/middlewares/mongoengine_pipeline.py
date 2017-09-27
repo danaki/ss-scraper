@@ -114,7 +114,7 @@ class MongoenginePipeline(BaseItemExporter):
 
             inst._changes.append(diffs)
             inst.id = prev.id
-        elif not item.open:
+        elif not item['open']:
             # don't save closed items
             return None
 
